@@ -12,7 +12,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -49,6 +50,18 @@ button:hover {
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.frow-item-top {
+  align-self: flex-start;
+}
+
+.frow-item-middle {
+  align-self: center;
+}
+
+.frow-item-bottom {
+  align-self: flex-end;
 }
 
 .flex-col-top {
@@ -222,5 +235,19 @@ button:hover {
 
 .login-bottom-icons {
   width: 100%;
-  height: 6%;
+  height: 9%;
+  padding: 0 2em 0 0;
+}
+
+.login-bottom-icons p {
+  color: white;
+}
+
+.login-bottom-icons a {
+  margin: 0 0.3em;
+}
+
+.login-bottom-icons img {
+  height: 35px;
+  width: 35px;
 }
