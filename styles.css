@@ -227,7 +227,7 @@ button:hover {
   height: 100%;
   border: 2px solid gray;
   border-left: unset;
-  background: url("./image/png/lg-btn.png") center center / cover, #666;
+  background: url("./image/png/lg-btn.png") no-repeat center center / 50%, #666;
 }
 
 .lg-options {
@@ -248,11 +248,17 @@ button:hover {
   margin: 0 0.3em;
 }
 
-.login-bottom-icons a:hover {
+.login-bottom-icons a:hover, 
+.lg-login-btn:hover {
   background-color: rgba(255, 255, 255, 0.486);
 }
 
 .login-bottom-icons img {
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
 }
+
+/* Log in interface ends here */
+
+/* Main window starts here */
+
