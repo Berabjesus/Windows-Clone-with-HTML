@@ -1,0 +1,49 @@
+/* Default Rules */
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+/* Wrapper Rules */
+
+.lockscreen {
+
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background: url("./image/pexels-photo-814499.jpeg") no-repeat 0 0 / cover;
+  filter: blur(2px);
+  -webkit-filter: blur(20px);
+}
