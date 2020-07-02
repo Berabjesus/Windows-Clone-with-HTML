@@ -23,7 +23,7 @@ a {
   color: black;
 }
 
-a:hover, 
+a:hover,
 button:hover {
   cursor: pointer;
 }
@@ -97,7 +97,7 @@ button:hover {
   align-self: center;
 }
 
-.fcol-item-right{
+.fcol-item-right {
   align-self: flex-end;
 }
 
@@ -193,23 +193,24 @@ button:hover {
   height: 90%;
 }
 
-.login-field > * {
+.login-field>* {
   margin: 0.2em 0;
 }
 
-.lg-user-name, .lg-options {
+.lg-user-name,
+.lg-options {
   color: white;
   font-size: 40px;
   font-weight: lighter;
 }
 
 .lg-user-icon {
-  width: 12%;
+  width: 200px;
   height: auto;
 }
 
 .lg-user-input {
-  width: 15%;
+  width: 250px;
   height: 5%;
 }
 
@@ -245,6 +246,10 @@ button:hover {
 
 .login-bottom-icons a {
   margin: 0 0.3em;
+}
+
+.login-bottom-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.486);
 }
 
 .login-bottom-icons img {
