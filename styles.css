@@ -20,6 +20,21 @@ h6 {
   display: flex;
 }
 
+.flex-row-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-row-middle {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-row-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -37,17 +52,28 @@ h6 {
   justify-content: center;
 }
 
+.flex-col-middle-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex-col-bottom {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.flex-item-left {
+.fcol-item-left {
   align-self: flex-start;
 }
 
-.flex-item-left {
+.fcol-item-center {
+  align-self: center;
+}
+
+.fcol-item-right{
   align-self: flex-end;
 }
 
@@ -62,11 +88,22 @@ h6 {
   margin: 0 0.3em;
 }
 
+.img-fit-round {
+  width: auto;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0 0.3em;
+}
+
 /* Wrapper Rules */
 
 .lockscreen {
   position: fixed;
-  z-index: 10;
+  z-index: 50;
   width: 100vw;
   height: 100%;
   padding: 1em;
@@ -109,16 +146,35 @@ h6 {
   height: 5%;
 }
 
-.wrapper {
+.login {
+  position: relative;
+  z-index: 10;
   width: 100vw;
   height: 100vh;
 }
 
-.wrapper::before {
+.login::before {
+  position: fixed;
+  z-index: -1;
   content: "";
   width: 100vw;
   height: 100vh;
   background: url("./image/pexels-photo-814499.jpeg") no-repeat 100% / cover;
   filter: blur(20px);
   -webkit-filter: blur(20px);
+}
+
+.login-field {
+  width: 100%;
+  height: 90%;
+  border: 1px dashed black;
+}
+
+.lg-user-icon {
+  
+}
+
+.login-icons {
+  width: 100%;
+  height: 6%;
 }
