@@ -1,25 +1,36 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Welcome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Welcome</title>
 </head>
+
 <body>
-    <nav class="taskbar flex-row">
-        <div class="default-tbar-items">
-            <label for=""></label>
-            <input class="tb-search" type="text" name="tb-search" id="tb-search">
-            <div class="search-box">
-                
-            </div>
-            <a href="#"><img class="tb-cortana" src="./image/png/cortana.png" alt="cortana-png"></a>
-            <a href="#"><img class="tb-taskview" src="./image/png/taskview.png" alt="taskview-png"></a>
-            <a href="#"><img class="tb-folder" src="./image/png/tb-folder.png" alt="folder"></a>
-            <a href="#"><img class="tb-chrome" src="./image/png/tb-chrome.png" alt="chrome"></a>
-        </div>
-        <div class="default-tbar-icons"></div>
-    </nav>
+  <nav class="taskbar flex-row">
+    <div class="default-tbar-items flex-row">
+      <label class="start-btn" for="dummy-input">
+      </label>
+      <input class="dummy-input" type="text" name="dummy-input" id="dummy-input">
+      <!-- start menu  positon fixed start here -->
+      <div class="start-menu">
+
+      </div>
+      <!-- start menu  positon fixed ends here -->
+      <input class="tb-search frow-item-bottom" type="text" name="tb-search" id="tb-search" placeholder="Type here to search">
+      <!-- search elements positon fixed start here -->
+      <div class="search-box">
+      </div>
+      <!-- search elements positon fixed end here -->
+      <a href="#"><img class="tbar-right-image" src="./image/png/cortana.png" alt="cortana-png"></a>
+      <a href="#"><img class="tbar-right-image" src="./image/png/taskview.png" alt="taskview-png"></a>
+      <a href="#"><img class="tbar-right-image" src="./image/png/tb-folder.png" alt="folder"></a>
+      <a href="#"><img class="tbar-right-image" src="./image/png/tb-chrome.png" alt="chrome"></a>
+    </div>
+    <div class="default-tbar-icons"></div>
+  </nav>
 </body>
+
 </html>
