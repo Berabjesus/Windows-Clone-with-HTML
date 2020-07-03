@@ -428,32 +428,23 @@ button:hover {
 }
 
 @media screen and (max-width:768px) {
+  .default-tbar-items {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
   .tb-search {
     width: 30vw;
   }
-  .default-tbar-icons > a:nth-child(n):not(:first-child){
-    display: none;
-  }
-  .default-tbar-icons >div {
-    order: 1;
-  }
 
-  .show-desk {
-    order: 1;
-  }
-
-  .tb-gear {
-    display: block;
-  }
-}
-
-@media screen and (max-width:508px) {
-  .taskbar {
-    flex-direction: column;
-    height: 78px;
+  .default-tbar-items > a {
+    width: 30px;
   }
 
   .default-tbar-icons {
-    align-self: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #0f0f14ea;
   }
 }
