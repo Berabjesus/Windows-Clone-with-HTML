@@ -289,6 +289,11 @@ button:hover {
   background: url("./image/png/start.png") no-repeat center / 70%; 
 }
 
+.start-btn:hover {
+  background-color: rgba(97, 94, 94, 0.445);
+  cursor: pointer;
+}
+
 .dummy-input {
   position: absolute;
   width: 0;
@@ -350,7 +355,16 @@ button:hover {
 
 .default-tbar-items > a {
   align-self: center;
-  margin: 0 0.6em;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.default-tbar-items > a:hover {
+  background-color: rgba(97, 94, 94, 0.445);
 }
 
 .tbar-left-image {
@@ -359,10 +373,6 @@ button:hover {
 
 .default-tbar-items a:nth-of-type(1) > img {
   width: 20px;
-}
-
-.default-tbar-icons {
-
 }
 
 .default-tbar-icons * {
@@ -400,9 +410,50 @@ button:hover {
   width: 18px;
 }
 
+.tb-gear {
+  display: none;
+}
+
 .show-desk {
   width: 6px;
   height: 100%;
   margin: 0 0 0 1em;
   border-left: 1px solid rgb(141, 135, 135);
+}
+
+@media screen and (max-width:1024px) {
+  .tb-search {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .tb-search {
+    width: 30vw;
+  }
+  .default-tbar-icons > a:nth-child(n):not(:first-child){
+    display: none;
+  }
+  .default-tbar-icons >div {
+    order: 1;
+  }
+
+  .show-desk {
+    order: 1;
+  }
+
+  .tb-gear {
+    display: block;
+  }
+}
+
+@media screen and (max-width:508px) {
+  .taskbar {
+    flex-direction: column;
+    height: 78px;
+  }
+
+  .default-tbar-icons {
+    align-self: flex-end;
+  }
 }
