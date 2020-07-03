@@ -268,6 +268,7 @@ button:hover {
 
 /* Main window starts here */
 
+/* task bar starts here */
 .taskbar {
   position: fixed;
   bottom: 0;
@@ -280,7 +281,6 @@ button:hover {
 .default-tbar-items {
   width: auto;
   margin: 0 auto 0 0;
-  /* border: 2px red dashed; */
 }
 
 .start-btn {
@@ -353,7 +353,7 @@ button:hover {
   margin: 0 0.6em;
 }
 
-.tbar-right-image {
+.tbar-left-image {
   width: 30px;
 }
 
@@ -361,3 +361,48 @@ button:hover {
   width: 20px;
 }
 
+.default-tbar-icons {
+
+}
+
+.default-tbar-icons * {
+  align-self: center;
+}
+
+.default-tbar-icons a:hover,
+.default-tbar-icons div:hover {
+  background-color: rgba(97, 94, 94, 0.445);
+}
+
+.default-tbar-icons a,
+.default-tbar-icons div {
+  height: 100%;
+}
+
+.default-tbar-icons a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tbar-right-image {
+  width: 22px;
+  height: auto;
+}
+
+.tb-date-time {
+  color: white;
+  font-size: 13px;
+  margin: 0 1.2em;
+}
+
+.default-tbar-icons a:nth-of-type(3) > img {
+  width: 18px;
+}
+
+.show-desk {
+  width: 6px;
+  height: 100%;
+  margin: 0 0 0 1em;
+  border-left: 1px solid rgb(141, 135, 135);
+}
