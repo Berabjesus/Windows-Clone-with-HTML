@@ -16,7 +16,7 @@
       <input class="dummy-input" type="text" name="dummy-input" id="dummy-input">
       <!-- start menu  positon fixed start here -->
       <div class="start-menu flex-row">
-        <div class="start-menu_links flex-col">
+        <section class="start-menu_links flex-col">
           <div class="sm_links_toggle-cont flex-row">
             <a href="#" class="sm_links_toggle"></a>
           </div>
@@ -25,8 +25,17 @@
           <a href="#" class="sm_links_pics"></a>
           <a href="#" class="sm_links_settings"></a>
           <a href="#" class="sm_links_power"></a>
-        </div>
-        <div class="start-menu_apps temp-border"></div>
+        </section>
+
+        <section class="start-menu_apps flex-col temp-border">
+          <div class="recently-added">
+            <p href="#">Recently added</p>
+            <div class="app-control">
+              <span></span>
+              <p>Generate Log file</p>
+            </div>
+          </div>
+        </section>
         <div class="start-menu_grid temp-border"></div>
       </div>
       <!-- start menu  positon fixed ends here -->

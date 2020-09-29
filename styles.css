@@ -383,6 +383,12 @@ button:hover {
 .start-menu_apps {
   height: 100%;
   width: 27%;
+  color: white;
+  font-size: 13px;
+}
+
+.recently-added {
+  color: white;
 }
 
 .start-menu_grid {
